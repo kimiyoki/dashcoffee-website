@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DashCoffee is a modern coffee and comfort food destination serving premium drinks, savory silog meals, and hearty snacks in a cozy setting."
+    />
+    <title>DashCoffee | Your Daily Coffee Moment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <div class="brand" aria-label="DashCoffee brand">
+          <span class="brand-icon">☕</span>
+          <span class="brand-text">DASHCOFFEE</span>
+        </div>
+
+        <div class="nav-links" aria-label="Navigation links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="btn btn-ghost">Log In</button>
+          <button class="btn btn-primary">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Freshly brewed, always worth it</p>
+            <h1>YOUR DAILY COFFEE MOMENT</h1>
+            <p class="subtitle">Take a dash, stay a while.</p>
+            <a class="btn btn-primary btn-large" href="#menu">[EXPLORE MENU]</a>
+          </div>
+
+          <div class="hero-card" aria-label="DashCoffee highlight card">
+            <div class="mini-tag">Signature pick</div>
+            <h3>Cloud Latte</h3>
+            <p>Velvety texture, balanced sweetness, and an airy finish.</p>
+            <div class="price-row">
+              <span>₱49</span>
+              <span>Perfect for your afternoon reset</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about-inner">
+          <div class="about-image-wrap">
+            <div class="about-visual" aria-label="Coffee shop illustration">
+              <div class="cup"></div>
+              <div class="bean bean-1"></div>
+              <div class="bean bean-2"></div>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <p class="section-tag">ABOUT US</p>
+            <h2>Cozy coffee, bold flavor, and comfort food that feels like home.</h2>
+            <p>
+              DashCoffee brings together handcrafted drinks, savory meals, and elevated student-friendly bites in a warm, welcoming atmosphere. Whether you're working, studying, or just taking a break, every sip is made to keep your day moving in the best way.
+            </p>
+            <a href="#menu" class="btn btn-primary">LEARN MORE</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu section" id="menu">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="section-tag">OUR MENU</p>
+            <h2>Everything you love, crafted for the everyday mood.</h2>
+          </div>
+
+          <div class="filter-bar" aria-label="Menu category filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="coffee">Iced Coffee</button>
+            <button class="filter-btn" data-filter="milk-tea">Milk Tea</button>
+            <button class="filter-btn" data-filter="dessert">Dessert</button>
+            <button class="filter-btn" data-filter="frappe">Frappes</button>
+            <button class="filter-btn" data-filter="hot">Hot Drinks</button>
+            <button class="filter-btn" data-filter="fruit">Fruit Drinks</button>
+            <button class="filter-btn" data-filter="savory">Savory</button>
+            <button class="filter-btn" data-filter="snacks">Snacks</button>
+          </div>
+
+          <div class="menu-grid" id="menuGrid">
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Dash Latte</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Iced Coffee Series</p>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Cloud Latte</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Iced Coffee Series</p>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Cloud Seasalt</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Iced Coffee Series</p>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Spanish Latte</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Iced Coffee Series</p>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Macchiato</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Iced Coffee Series</p>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Sweet Americano</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Iced Coffee Series</p>
+            </article>
+
+            <article class="menu-card" data-category="coffee">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Dark Mocha</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Iced Coffee Series</p>
+            </article>
+
+            <article class="menu-card" data-category="milk-tea">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Tokyo Brown Sugar</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Milk Tea w/ Pearls</p>
+            </article>
+
+            <article class="menu-card" data-category="milk-tea">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Sapporo</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Milk Tea w/ Pearls</p>
+            </article>
+
+            <article class="menu-card" data-category="milk-tea">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Hokkaido</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Milk Tea w/ Pearls</p>
+            </article>
+
+            <article class="menu-card" data-category="milk-tea">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Okinawa Roasted</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Milk Tea w/ Pearls</p>
+            </article>
+
+            <article class="menu-card" data-category="milk-tea">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Nagoya Choco</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Milk Tea w/ Pearls</p>
+            </article>
+
+            <article class="menu-card" data-category="milk-tea">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Kyoto Matcha</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Milk Tea w/ Pearls</p>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Forest Cake</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Dessert w/ Salty Cream</p>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Matcha Cream</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Dessert w/ Salty Cream</p>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Choco Muffy</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Dessert w/ Salty Cream</p>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Mango Cream</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Dessert w/ Salty Cream</p>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Dark Chocolate</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Dessert w/ Salty Cream</p>
+            </article>
+
+            <article class="menu-card" data-category="dessert">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Velvet Cake</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Dessert w/ Salty Cream</p>
+            </article>
+
+            <article class="menu-card" data-category="frappe">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Dark Forest</span>
+                <span class="menu-card-price">₱69</span>
+              </div>
+              <p class="menu-card-meta">Blended Frappes</p>
+            </article>
+
+            <article class="menu-card" data-category="frappe">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Taro Dream</span>
+                <span class="menu-card-price">₱69</span>
+              </div>
+              <p class="menu-card-meta">Blended Frappes</p>
+            </article>
+
+            <article class="menu-card" data-category="frappe">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Red Chocolate</span>
+                <span class="menu-card-price">₱69</span>
+              </div>
+              <p class="menu-card-meta">Blended Frappes</p>
+            </article>
+
+            <article class="menu-card" data-category="frappe">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Matchy Choco</span>
+                <span class="menu-card-price">₱69</span>
+              </div>
+              <p class="menu-card-meta">Blended Frappes</p>
+            </article>
+
+            <article class="menu-card" data-category="frappe">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Vanilla Bean</span>
+                <span class="menu-card-price">₱69</span>
+              </div>
+              <p class="menu-card-meta">Blended Frappes</p>
+            </article>
+
+            <article class="menu-card" data-category="frappe">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Oreo Cream</span>
+                <span class="menu-card-price">₱69</span>
+              </div>
+              <p class="menu-card-meta">Blended Frappes</p>
+            </article>
+
+            <article class="menu-card" data-category="hot">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Dash Latte</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Hot Drinks</p>
+            </article>
+
+            <article class="menu-card" data-category="hot">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Spanish Latte</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Hot Drinks</p>
+            </article>
+
+            <article class="menu-card" data-category="hot">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Dark Chocolate</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Hot Drinks</p>
+            </article>
+
+            <article class="menu-card" data-category="hot">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Hazelnut</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Hot Drinks</p>
+            </article>
+
+            <article class="menu-card" data-category="hot">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Caramel Macchiato</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Hot Drinks</p>
+            </article>
+
+            <article class="menu-card" data-category="hot">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Matcha Latte</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Hot Drinks</p>
+            </article>
+
+            <article class="menu-card" data-category="fruit">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Strawberry</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Fruiteas & Fruit Sodas</p>
+            </article>
+
+            <article class="menu-card" data-category="fruit">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Green Apple</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Fruiteas & Fruit Sodas</p>
+            </article>
+
+            <article class="menu-card" data-category="fruit">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Mango</span>
+                <span class="menu-card-price">₱49</span>
+              </div>
+              <p class="menu-card-meta">Fruiteas & Fruit Sodas</p>
+            </article>
+
+            <article class="menu-card" data-category="fruit">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Lychee</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Fruiteas & Fruit Sodas</p>
+            </article>
+
+            <article class="menu-card" data-category="fruit">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Berry Treat</span>
+                <span class="menu-card-price">₱69</span>
+              </div>
+              <p class="menu-card-meta">Fruiteas & Fruit Sodas</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Hotsilog</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Hamsilog</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Longsilog</span>
+                <span class="menu-card-price">₱59</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Tapsilog</span>
+                <span class="menu-card-price">₱79</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Tosilog</span>
+                <span class="menu-card-price">₱79</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Chick-silog</span>
+                <span class="menu-card-price">₱79</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Porksilog</span>
+                <span class="menu-card-price">₱89</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Spamsilog</span>
+                <span class="menu-card-price">₱89</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Bangsilog</span>
+                <span class="menu-card-price">₱99</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Hungarian</span>
+                <span class="menu-card-price">₱99</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="savory">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Nuggets</span>
+                <span class="menu-card-price">₱99</span>
+              </div>
+              <p class="menu-card-meta">Silog & Savory Menu</p>
+            </article>
+
+            <article class="menu-card" data-category="snacks">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Spam Sandwich</span>
+                <span class="menu-card-price">₱99</span>
+              </div>
+              <p class="menu-card-meta">Sandwiches & Snacks</p>
+            </article>
+
+            <article class="menu-card" data-category="snacks">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Ham Sandwich</span>
+                <span class="menu-card-price">₱69</span>
+              </div>
+              <p class="menu-card-meta">Sandwiches & Snacks</p>
+            </article>
+
+            <article class="menu-card" data-category="snacks">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Hungarian Overload</span>
+                <span class="menu-card-price">₱79</span>
+              </div>
+              <p class="menu-card-meta">Sandwiches & Snacks</p>
+            </article>
+
+            <article class="menu-card" data-category="snacks">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Burger</span>
+                <span class="menu-card-price">₱30</span>
+              </div>
+              <p class="menu-card-meta">Sandwiches & Snacks</p>
+            </article>
+
+            <article class="menu-card" data-category="snacks">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Cheese Sticks</span>
+                <span class="menu-card-price">₱20</span>
+              </div>
+              <p class="menu-card-meta">Sandwiches & Snacks</p>
+            </article>
+
+            <article class="menu-card" data-category="snacks">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Fries</span>
+                <span class="menu-card-price">₱25</span>
+              </div>
+              <p class="menu-card-meta">Sandwiches & Snacks</p>
+            </article>
+
+            <article class="menu-card" data-category="snacks">
+              <div class="menu-card-top">
+                <span class="menu-card-name">Siomai / Gyoza</span>
+                <span class="menu-card-price">₱10 – ₱55</span>
+              </div>
+              <p class="menu-card-meta">Sandwiches & Snacks</p>
+            </article>
+          </div>
+
+          <div class="section-cta">
+            <a href="#menu" class="btn btn-primary">VIEW FULL MENU</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">FEATURED PRODUCTS</p>
+            <h2>Top picks from our everyday favorites.</h2>
+          </div>
+
+          <div class="featured-grid">
+            <article class="product-card">
+              <div class="product-badge">Limited time</div>
+              <h3>Matcha Frappe</h3>
+              <p>₱69</p>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge">Popular</div>
+              <h3>Salted Caramel Series</h3>
+              <p>Latte / Frappe / Cocoa — ₱59 - ₱69</p>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge">New</div>
+              <h3>Cheesecake w/ Pearls</h3>
+              <p>Okinawa, Matcha, Mango, Red Velvet, Taro, Dark Choco — ₱79</p>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge">Sweet</div>
+              <h3>Chocolate / Caramel Waffle</h3>
+              <p>₱69 + syrup +₱10</p>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge">Savory</div>
+              <h3>Spam Sandwich / Hungarian Overload</h3>
+              <p>₱79 - ₱99</p>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge">Meal</div>
+              <h3>Silog Meals</h3>
+              <p>Tapsilog, Bangsilog, Porksilog — ₱79 - ₱99</p>
+            </article>
+          </div>
+
+          <div class="addon-banner">
+            <span class="addon-label">Add-ons Badge:</span>
+            <span>Sinkers & Extras available: Coffee Jelly, Pearls, Salty Cream, Crushed Oreos, Coffee Shot — ₱10 - ₱18</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="values section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="section-tag">WHY DASHCOFFEE</p>
+            <h2>Made to fit your day — fresh, cozy, and affordable.</h2>
+          </div>
+
+          <div class="value-grid">
+            <div class="value-card">
+              <div class="value-icon">☕</div>
+              <h3>Quality</h3>
+              <p>Rich ingredients and coffeehouse-crafted flavor in every cup.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">🪴</div>
+              <h3>Cozy</h3>
+              <p>A warm, relaxed atmosphere for study sessions, dates, and catch-ups.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">✨</div>
+              <h3>Fresh</h3>
+              <p>Handmade favorites served with a bright, cheerful everyday energy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section">
+        <div class="container">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote>
+              “Budget friendly foods and drinks! Will definitely recommend this to students and wfh workers 🔥🫶🏻”
+            </blockquote>
+            <p class="reviewer">— DashCoffee regular</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="location section" id="locations">
+        <div class="container location-grid">
+          <div class="location-copy">
+            <p class="section-tag">FIND US</p>
+            <h2>Drop by for your next coffee break.</h2>
+            <ul class="info-list">
+              <li><strong>📍</strong> Block 3 Lot 53F Phase 4B, EASTWOOD RESIDENCES, Rodriguez, 1860 Rizal</li>
+              <li><strong>🕐</strong> 1:00pm to 9:00pm</li>
+            </ul>
+            <a class="btn btn-primary" href="https://maps.app.goo.gl/K7sYFxtxxMJADu3k6" target="_blank" rel="noreferrer">[VIEW LOCATION IN GOOGLE MAP]</a>
+          </div>
+
+          <div class="map-card" aria-label="Map preview card">
+            <div class="map-pin">📍</div>
+            <p>Eastwood Residences</p>
+            <span>Rodriguez, Rizal</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="section-tag">CONTACT US</p>
+            <h2>We’d love to hear from you.</h2>
+            <ul class="contact-list">
+              <li>✉️ Email: <a href="mailto:eiramvargas@yahoo.com">eiramvargas@yahoo.com</a></li>
+              <li>📱 Phone: <a href="tel:+639202773807">0920 277 3807</a></li>
+              <li>📱 Facebook: <a href="#">Dash coffee montalban</a></li>
+              <li>📱 Instagram: <a href="#">dashcfee_montalban</a></li>
+            </ul>
+            <a class="btn btn-primary" href="mailto:eiramvargas@yahoo.com">[CONTACT US]</a>
+          </div>
+
+          <div class="contact-card">
+            <p class="mini-text">Need a quick reply?</p>
+            <h3>Let’s make your next coffee run effortless.</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback section">
+        <div class="container feedback-wrap">
+          <div class="section-heading">
+            <p class="section-tag">FEEDBACK</p>
+            <h2>Share your thoughts with us.</h2>
+          </div>
+
+          <form class="feedback-form" aria-label="Feedback form">
+            <textarea
+              id="feedbackText"
+              maxlength="500"
+              placeholder="Share your thoughts..."
+              aria-label="Share your thoughts"
+            ></textarea>
+            <div class="form-footer">
+              <span id="charCount">0 / 500 characters</span>
+              <button type="submit" class="btn btn-primary">SUBMIT FEEDBACK</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand" aria-label="DashCoffee footer brand">
+            <span class="brand-icon">☕</span>
+            <span class="brand-text">DASHCOFFEE</span>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-meta">
+          <p>© 2026 Dash Coffee</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
